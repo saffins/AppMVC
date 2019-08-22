@@ -10,5 +10,13 @@ public interface EmployeeDAO {
 	List<Employee> get();
 	
 	boolean save(Employee e) throws SQLException;
+	
+ 
+
+	boolean delete(int id);
+	
+	boolean edit(Employee e);
+	
+	boolean isEmpPresent(Integer id);
 
 }

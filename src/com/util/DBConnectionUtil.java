@@ -8,7 +8,7 @@ public class DBConnectionUtil {
 
 	private static final String uname = "root";
 	private static final String pass = "root";
-	private static final String jdbcURL = "jdbc:mysql://localhost:3306/employees";
+	private static final String jdbcURL = "jdbc:mysql://localhost:3306/employee";
 	private static final  String driver = "com.mysql.jdbc.Driver";
 	private static Connection con;
 	

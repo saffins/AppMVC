@@ -2,17 +2,18 @@ package com.entities;
 
 public class Employee {
 
-	private int age;
-	private String name;
-	private String dob;
-	private String department;
+	public Integer id;
+	public String name;
+	public String dob;
+	public String department;
+	
 
-	public int getAge() {
-		return age;
+	public int getId() {
+		return id;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setId(int age) {
+		this.id = age;
 	}
 
 	public String getName() {
@@ -41,7 +42,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [age=" + age + ", name=" + name + ", dob=" + dob + ", department=" + department + "]";
+		return "Employee [age=" + id + ", name=" + name + ", dob=" + dob + ", department=" + department + "]";
 	}
 
 }

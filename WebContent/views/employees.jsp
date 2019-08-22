@@ -15,17 +15,18 @@ rel = "stylesheet" />
 <body>
 
 
-
+ 
 <div class ="container">
-
+<p>${message}</p>
+<p>${deletedMsg}</p>
 <button class="btn btn-primary" onclick="window.location.href='views/addEmp.jsp'">Add Employee</button>
-
+ 
 	<table border="1" class="table table-striped table-bordered">
 		<tr class="thead-dark">
 			<th>name</th>
 			<th>dob</th>
 			<th>department</th>
-
+<th>Actions</th>
 
 
 		</tr>
@@ -37,10 +38,15 @@ rel = "stylesheet" />
 				<td>${employee.name}</td>
 				<td>${employee.dob}</td>
 				<td>${employee.department}</td>
-
+				 <td><a href="${pageContext.request.contextPath}/EmployeeController?action=edit&id=${employee.id}">edit</a></td>
+				 <td><a href="${pageContext.request.contextPath}/EmployeeController?action=delete&id=${employee.id}">Delete</a></td>
 			</tr>
 
 		</c:forEach>
+		
+		
+
+  
 
 	</table>
 </div>
